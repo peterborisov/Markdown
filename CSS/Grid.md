@@ -23,17 +23,22 @@
 Defines the columns and rows of the grid with a space-separated list of values. Using the fr unit.
 ```
 .container {
-  grid-template-columns: 40px 50px auto 50px 40px;
-  grid-template-rows: 25% 100px auto;
+  /* 3 columns, equal size */
+  grid-template-columns: 1fr 1fr 1fr;
+  /* 2 rows, equal size */
+  grid-template-rows: 1fr 1fr;
 }
 ```
 **grid-template-areas**
 ```
 .container {
-  grid-template-areas: 
-    "header header header header"
-    "main main . sidebar"
-    "footer footer footer footer";
+    /* 3 columns, 3 rows
+    * Areas spanning more than 1 column/row
+    */
+    grid-template-areas:
+    "masthead masthead toolbar"
+    "main     main     sidebar"
+    "footer   footer   sidebar";
 }
 ```
 **grid-template**<br/>
@@ -50,10 +55,12 @@ A shorthand for setting grid-template-rows, grid-template-columns, and grid-temp
 **grid-row-gap**
 ```
 .container {
-  grid-template-columns: 100px 50px 100px;
-  grid-template-rows: 80px auto 80px; 
-  column-gap: 10px;
-  row-gap: 15px;
+    /* Between columns & rows */
+    gap: 1rem;
+    /* Between columns */
+    column-gap: 1rem;
+    /* Between rows */
+    row-gap: 1rem;
 }
 ```
 **grid-gap**<br/>
@@ -148,8 +155,10 @@ The children (i.e. direct descendants) of the grid container.
 Shorthand for grid-column-start + grid-column-end, and grid-row-start + grid-row-end, respectively.
 ```
 .item-c {
-  grid-column: 3 / span 2;
-  grid-row: third-line / 4;
+    /* Start at line 2, go to line 6 */
+    grid-column: 2 / 6;
+    /* Start at line 2, go to line 6 */
+    grid-row: 2 / 6;
 }
 ```
 **grid-area**<br/>
