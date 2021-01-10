@@ -82,6 +82,6 @@ flex-shrink: 3; /* default 1 */
   align-self: auto | flex-start | flex-end | center | baseline | stretch;
 ```
 
-https://tobiasahlin.com/blog/common-flexbox-patterns/
-https://www.quackit.com/css/flexbox/examples/
+https://tobiasahlin.com/blog/common-flexbox-patterns/<br/>
+https://www.quackit.com/css/flexbox/examples/<br/>
 https://www.freecodecamp.org/news/flexbox-the-ultimate-css-flex-cheatsheet/

@@ -180,7 +180,11 @@ Shorthand for grid-column-start + grid-column-end, and grid-row-start + grid-row
 }
 ```
 **place-self**<br/>
-Sets both the align-self and justify-self properties in a single declaration.
 ```
+Sets both the align-self and justify-self properties in a single declaration.
 
 ```
+
+https://gridbyexample.com/examples/<br/>
+https://www.freecodecamp.org/news/intro-to-css-grid-layout/
+https://www.codecademy.com/learn/learn-css/modules/learn-css-grid/cheatsheet
