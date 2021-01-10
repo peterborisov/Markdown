@@ -5,10 +5,14 @@
 
 ## `background`
 ```
-The Flexbox Layout (Flexible Box) module (a W3C Candidate Recommendation as of October 2017) aims at providing a more efficient way to lay out, 
-align and distribute space among items in a container, even when their size is unknown and/or dynamic (thus the word “flex”).
+The Flexbox Layout (Flexible Box) module (a W3C Candidate Recommendation 
+as of October 2017) aims at providing a more efficient way to lay out, 
+align and distribute space among items in a container, even when their 
+size is unknown and/or dynamic (thus the word “flex”).
 The main idea behind the flex layout is to give the container the ability to alter its items’ width/height (and order) to best fill the available space.
-Flexbox layout is most appropriate to the components of an application, and small-scale layouts, while the Grid layout is intended for larger scale layouts.
+Flexbox layout is most appropriate to the components of an application, 
+and small-scale layouts, while the Grid layout is intended for larger 
+scale layouts.
 ```
 
 ## `basics & terminology`
@@ -77,3 +81,7 @@ flex-shrink: 3; /* default 1 */
 ```
   align-self: auto | flex-start | flex-end | center | baseline | stretch;
 ```
+
+https://tobiasahlin.com/blog/common-flexbox-patterns/
+https://www.quackit.com/css/flexbox/examples/
+https://www.freecodecamp.org/news/flexbox-the-ultimate-css-flex-cheatsheet/
