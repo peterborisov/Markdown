@@ -1,5 +1,4 @@
 ## API
----
 A - Aplication - Software that does s task<br/>
 P - Programming - Program that does the task in the Aplication<br/>
 I - Interface - Place to tell the program to run<br/>
@@ -12,7 +11,6 @@ P - messaging<br/>
 I - cell phone<br/>
 
 ## Web Service
----
 > Web services include any software, application, that provides web protocols (HTTP or HTTPS) to communicate, and exchange data messaging – usually XML (Extensible Markup Language) – throughout the internet.<br/>
 API over internet - web service.
 
@@ -26,11 +24,26 @@ Web service use:<br/>
  - XML or JSON to format data over the internet
  - REST, SOAP or XML/RPC to transfer that data
 
-## HTTP
-Hypertext Transfer Protocol
+## HTTP - Hypertext Transfer Protocol
+```
+The HTTP is an application layer protocol, that allows web-based applications 
+to communicate and exchange data.
+The HTTp is the messenger of the web.
+It is a TCP/IP based protocol.
+It is used to deliver contents(images, videos, audios, documents, etc.)
+```
+#### Important things about HHTP
 
----
-HTTP request:
+1. HTTP is connectionless: after request, the client disconnect from server,
+when response is ready, server re-establish the connection.
+2. HTTP can deliver any data, as long as two computers can read it. 
+3. HTTP is stateless: client and server know about each other, just during the current request. If it closes and want to connect again, the connection is handled as first one.
+
+<img src="./assets/how-http-works.png" width="200">
+<img src="./assets/http-messages.png" width="200">
+<img src="./assets/http-req-res.png" width="200">
+
+#### HTTP request:
 1. Start line - 
     - version(1.1), 
     - methods(get, post, put, delete), 
@@ -44,30 +57,25 @@ HTTP request:
 3. Blank line - separate header from body
 4. Body - username/pass
  
-HTTP response: same parts
+#### HTTP response: same parts
 1. Start line - +status code(200 ok)
 2. Headers - cookie
 3. Blank line
 4. Body - html
 
-## XML
-eXtensible Markup Language
+## XML - eXtensible Markup Language
 
----
 HTTP header - content-type: application/xml<br/>
 HTTP body: XML<br/>
 
-## JSON
-Javascript object notation
+## JSON - Javascript object notation
 
 ---
 HTTP header - content-type: application/json<br/>
 HTTP body: JSON<br/>
 
-## SOAP
-Simple Object Access Protocol - rules to form HTTP req/res<br/>
+## SOAP - Simple Object Access Protocol - rules to form HTTP req/res
 
----
 Uses s WSDL(web services description language)<br/>
 
 1. Start line - POST WSDL HTTP version
@@ -75,10 +83,8 @@ Uses s WSDL(web services description language)<br/>
 3. Blank line
 4. Body - xml envelope formed using WSDL
 
-## REST
-Representational State transfer
+## REST - Representational State transfer
 
----
 - Cache
 - Stateless
 
@@ -88,7 +94,7 @@ Representational State transfer
 4. Body - JSON, XML, images, html web page, ets.
 
 ## Apps
----
+
 - Native
 - Web
 - Hybrid
