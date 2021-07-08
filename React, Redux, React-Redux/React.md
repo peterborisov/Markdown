@@ -12,7 +12,7 @@ Open-source, component-based, front-end library responsible only for the applica
 
 ## 10 basic concepts of React
  1. **Virtual DOM(VDOM)** 
->- lightweight representation of the 'real' DOM in the memory. When the state of an object changes, VDOM changes only that object in the real DOM instead of updating all of the objects.<br>
+>- lightweight representation of the 'real' DOM in the memory. When the state of an object changes, VDOM changes only that object in the real DOM instead of updating all of the objects. Synced with the real DOM by a library such as ReactDOM. <br>
  2. **JSX**
 > - JavaScript Syntax Extension. By using JSX, we can write HTML structures in the same file that contains JavaScript code.<br>
 3. **Embedding expressions in JSX**
@@ -69,7 +69,7 @@ constructor() => render() => componentDidMount()
 
 |             | State       | Props     |
 | :---        |    :----:   |          :---: |
-| Use case    | State is used to store the data of the components that ha to be rendered to the view | Props are used to pass data and event handlers to the children components  | Props are used to pass data and event handlers to the children components
+| Use case    | State is used to store the data of the components that have to be rendered to the view | Props are used to pass data and event handlers to the children components  | Props are used to pass data and event handlers to the children components
 | Mutability  | State holds the data and can change over time        | Props are immutable—once set, props can't be changed     |
 | Component   | State can only be used in class components        | Props can be used in both functional and class components      |
 | Updation    | Event handlers generally update state        | The parent component sets props for the children components      |

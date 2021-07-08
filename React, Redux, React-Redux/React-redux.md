@@ -74,3 +74,12 @@ Provides a third-party extension point between dispatching an action and the mom
 Use middleware for logging, crash reporting, etc.<br>
 npm i redux-logger
 
+## Q&A
+#### 1. What were the major problems with MVC framework?
+- DOM manipulation was very expensive
+- Applications were slow and inefficient
+- There was huge memory wastage
+
+#### 2. Explain Flux.
+- Flux is an architectural pattern which enforces the uni-directional data flow. It controls derived data and enables communication between multiple components using a central Store which has authority for all data. Any update in data throughout the application must occur here only.
+- Action => dispatcher => store => view => action => dispatcher ...

@@ -6,7 +6,6 @@ https://www.edureka.co/blog/interview-questions/react-interview-questions/
 
 ## General React
 #### 1. Differentiate between Real DOM and Virtual DOM.
-
 |Real DOM|Virtual DOM|
 |:---|:---|
 |1. It updates slow.|1. It updates faster.|
@@ -26,8 +25,10 @@ https://www.edureka.co/blog/interview-questions/react-interview-questions/
 - It follows uni-directional data flow or data binding.
 
 #### 4. List some of the major advantages of React.
-
-- It increases the application’s performance
+- Virtual DOM improve efficiency
+- Gentle learning curve
+- SEO friendly
+- Increases performance
 - It can be conveniently used on the client as well as server side
 - Because of JSX, code’s readability increases
 
@@ -81,35 +82,33 @@ https://www.edureka.co/blog/interview-questions/react-interview-questions/
 - When the state object changes, the component re-renders.
 
 #### 4. Differentiate between states and props.
-
-| Conditions	| State |	Props |
+||State|Props|
 |:---|:---|:---|
-|1. Receive initial value from parent component	|Yes|	Yes
-|2. Parent component can change value |No|Yes|
-|3. Set default values inside component|	Yes	|Yes|
-|4. Changes inside component	|Yes|	No|
-|5. Set initial value for child components	|Yes	|Yes|
-|6. Changes inside child components|No|	Yes|
+Use|Holds information about the components|Allows to pass data from one component to other components as an argument
+Mutability|Is mutable|Are immutable
+Read-Only| Can be changed| Are read-only
+Child components| Child components cannot access |Child component can access 
 
 #### 5. How can you update the state of a component?
 - using this.setState().
 
 #### 6. Differentiate between stateful and stateless components.
-|Stateful(Class) Component|	Stateless(Functional) Component|
-|:---|:---|
-|1. Stores info about component’s state change in memory	|1. Calculates the internal state of the components|
-|2. Have authority to change state|	2. Do not have the authority to change state|
-|3. Contains the knowledge of past, current and possible future changes in state	|3. Contains no knowledge of past, current and possible future state changes|
-|4. Stateless components notify them about the requirement of the state change, then they send down the props to them.|	4. They receive the props from the Stateful components and treat them as callback functions.
+||Stateful(Class) Component|	Stateless(Functional) Component|
+|:---|:---|:---|
+State| Can hold or manage state| Cannot hold or manage state
+Simplicity|Complex as compared to the stateless component|Simple and easy to understand
+Lifecycle methods|Can work with all lifecycle methods|Does not work with any lifecycle method
+Reusability|Can be reused|Cannot be reused
 
 #### 7. What are the different phases of React component’s lifecycle?
 - There are three different phases:
-1. **Initial Rendering Phase**:  Component is about to start its life journey and make its way to the DOM.
-2. **Updating Phase**: It can potentially update and re-render only when a prop or state change occurs.
-3. **Unmounting Phase**: The component is destroyed and removed from the DOM.
+1. **Initial Rendering Phase(Mounting)**:  Component is about to start its life journey and make its way to the DOM.
+2. **Updating Phase(Updating)**: It can potentially update and re-render only when a prop or state change occurs.
+3. **Unmounting Phase(Unmounting)**: The component is destroyed and removed from the DOM.
 
 #### 8. What are Higher Order Components(HOC)
-- Higher Order Component is a way of reusing the component logic. HOC are custom components which wrap another component within it.
+- Acts as a container for other components. This helps to keep components simple and enables re-usability. They are generally used when multiple components have to use a common logic. Function that takes in a component and returns a new component
+
 #### 9. What are Pure Components?
 - Pure components are the simplest and fastest components which can be written. They can replace any component which only has a render(). These components enhance the simplicity of the code and performance of the application.
 
@@ -144,6 +143,9 @@ Similar to handling events in DOM elements.
 - By using the export and import properties.
 
 #### 7. What do you know about controlled and uncontrolled components?
+- Controlled component - the value of the input element is controlled by React. Any changes made to the input element will be reflected in the code as well. When a user enters data inside the input element of a controlled component, onChange function gets triggered and inside the code we check whether the value entered is valid or invalid. If the value is valid, we change the state and re-render the input element with new value.
+- Uncontrolled component In an uncontrolled component, the value of the input element is handled by the DOM itself.
+
 |Controlled Components|	Uncontrolled Components|
 |:---|:---|
 |1. They do not maintain their own state	|1. They maintain their own state
@@ -153,12 +155,39 @@ Similar to handling events in DOM elements.
 #### 8. What is the significance of keys in React?
 - Keys are used for identifying unique Virtual DOM Elements
 
-## React Redux
-#### 1. What were the major problems with MVC framework?
-- DOM manipulation was very expensive
-- Applications were slow and inefficient
-- There was huge memory wastage
+#### 9. What is the use of render() in React?
+- returns the HTML, which is to be displayed in the component.
+- If you need to render more than one element, all of the elements must be inside one parent tag.
 
-#### 2. Explain Flux.
-- Flux is an architectural pattern which enforces the uni-directional data flow. It controls derived data and enables communication between multiple components using a central Store which has authority for all data. Any update in data throughout the application must occur here only.
-- Action => dispatcher => store => view => action => dispatcher ...
+#### 10. How do you style React components?
+- Inline Styling(style={{ color: "Yellow" }})
+- JavaScript Object( myStyle = {color: "red", fontSize: "28px"})
+- CSS Stylesheet(import './RandomComponent.css';)
+- CSS Modules(.module.css)
+
+#### 11. How to prevent re-renders in React?
+- Re-rendering of a component and it’s child components occur when props or state of the component has been changed. Use the shouldComponentUpdate( ) method.
+
+#### 12. Explain React Hooks. 
+- Hooks are functions that let us “hook into” React state and lifecycle features from a functional component.
+React Hooks cannot be used in class components. They let us write components without class.
+
+#### 13. Name a few techniques to optimize React app performance.
+- useMemo( ) -It is a React hook that is used for caching CPU-Expensive functions.
+- React.PureComponent
+- Maintaining State Colocation
+- Lazy Loading 
+
+#### 14. What is prop drilling in React? 
+- Pass data levels down to nested components. The disadvantage of using prop drilling is that the components that should otherwise be not aware of the data have access to the data.
+
+## React Router
+#### 1. What is React Router?
+- React Router is a powerful routing library built on top of React.
+#### 2. How is React routing different from conventional routing?
+|React Routing|Conventional routing
+|:---|:---|
+|Single HTML page|Each view is a new HTML file
+|The user navigates multiple views in the same file|The user navigates multiple files for each view
+The page does not refresh since it is a single file|The page refreshes every time user navigates
+Improved performance|Slower performance
