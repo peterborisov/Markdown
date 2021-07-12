@@ -1,5 +1,5 @@
 1. HTTP - Hypertext Transfer Protocol
-2. API Aplication Programming Interface
+2. API - Aplication Programming Interface
 3. REST - REpresentational State Transfer
 4. XML - eXtensible Markup Language
 5. JSON - Javascript object notation
@@ -21,7 +21,7 @@ It is used to deliver contents(images, videos, audios, documents, etc.)
 
 1. HTTP is **connectionless**: after request, the client disconnect from server,
 when response is ready, server re-establish the connection.
-2. HTTP can deliver any data, as long as two computers can read it. 
+2. HTTP is **media independent**:HTTP can deliver any data, as long as two computers can read it. 
 3. HTTP is **stateless**: client and server know about each other, just during the current request. If it closes and want to connect again, the connection is handled as first one.
 
 <img src="./assets/how-http-works.png" width="500">
@@ -32,7 +32,7 @@ when response is ready, server re-establish the connection.
 1. Start line - 
     - version(1.1), 
     - methods(get, post, put, delete), 
-    - API program folder location(/search), 
+    - API program folder location(URI/search), 
     - parameters(?q=tuna),
     - format
 2. Headers - 
@@ -87,7 +87,6 @@ HTTP body: XML<br/>
 ## JSON - Javascript object notation
 > Data representation format.<br/>
 Keys must be strings, and values must be a valid JSON data type (string, number, object, array, boolean or null).
-
 
 HTTP header - content-type: application/json<br/>
 HTTP body: JSON<br/>

@@ -1,10 +1,8 @@
 # Asynchronous Programming
 In a **synchronous programming** model, things happen one at a time. 
-When you call a function that performs a long-running action, it returns only when the action has finished and it can return the result. 
-This stops your program for the time the action takes.<br/>
+When you call a function that performs a long-running action, it returns only when the action has finished and it can return the result. This stops your program for the time the action takes.<br/>
 
-An **asynchronous model** allows multiple things to happen at the same time. When you start an action, your program continues to run. 
-When the action finishes, the program is informed and gets access to the result (for example, the data read from disk).
+An **asynchronous model** allows multiple things to happen at the same time. When you start an action, your program continues to run. When the action finishes, the program is informed and gets access to the result (for example, the data read from disk).
 
 ## Asynchronous Patterns
 1. [Callbacks](#Callbacks)<br/>
@@ -33,10 +31,16 @@ doThing('value', (err, result) => {
 ES6 standart, alternative of callbacks<br/>
 A promise is an asynchronous action that may complete at some point and produce a value.<br/>
 **Pros**  Promise.all() allows for multiple operations to be run in parallel rather than just asynchronously.<br/>
+- fulfilled: Action related to the promise succeeded.
+- rejected: Action related to the promise failed.
+- pending: Promise is still pending i.e not fulfilled or rejected yet.
+- settled: Promise has fulfilled or rejected
+
 We can call .then on a Promise as many times as we want(chainable).<br/>
 You can define a single error handler using .catch() added to the end of your promise chain.<br/>
 
 **Cons** memory usage when using promises instead of callbacks.<br/>
+
 Avoid the Pyramid of Doom
 ```
 doThing('value')

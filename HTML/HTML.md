@@ -11,7 +11,7 @@
 **!DOCTYPE html** — It tells the browser that you’re writing modern HTML(HTML5).<br/>
 **html** — Wraps the whole HTML file, everything goes inside it.<br/>
 **head** — Stuff that doesn’t necessarily show on the screen, but controls and defines the HTML document.<br/>
-**meta** — Used to tell the browser what kind of characters are used in your document. utf-8 allows many languages in the world.<br/>
+**meta** — additional important information about a document(author, expiry date, a list of keywords, document author)<br/>
 **title** — The piece of text that’s shown in the tab of your browser.<br/>
 **body** — Not the body of the website, but the body of the HTML document. Everything rendered on the screen in a website goes in here.<br/>
 
@@ -54,7 +54,7 @@ Since October 2014, HTML4 got upgraded to HTML5, along with some new “semantic
 ## `Forms 2.0`
 Form must have the name, action & method attributes set.<br/>
 **name=""** - A unique name identifying the form.<br/>
-**action="url"** - The address (URL) of the script that will process the form data when submitted.<br/>
+**action="url"** - On submit, send the form-data to a file named "action_page.php" (to process the input):<br/>
 **method=""** - The method used by the action script, POST or GET. For example, post would be used to submit data to a user-registration form, and get is used for searches or forms that must return information.
 
 ### Form tags

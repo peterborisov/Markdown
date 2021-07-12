@@ -181,6 +181,9 @@ React Hooks cannot be used in class components. They let us write components wit
 #### 14. What is prop drilling in React? 
 - Pass data levels down to nested components. The disadvantage of using prop drilling is that the components that should otherwise be not aware of the data have access to the data.
 
+#### 15. What is Context in React?
+- Context provide a way to pass data through the component three without passing props down manually at every level
+
 ## React Router
 #### 1. What is React Router?
 - React Router is a powerful routing library built on top of React.
