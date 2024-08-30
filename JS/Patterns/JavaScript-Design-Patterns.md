@@ -1,3 +1,5 @@
+### Patterns - https://javascriptpatterns.vercel.app/patterns/react-patterns/higher-order-component
+
 # JavaScript Design Patterns
 Design patterns are reusable solutions to commonly occurring problems in software design.
 They are both exciting and a fascinating topic to explore in any programming language.
