@@ -50,7 +50,7 @@ when response is ready, server re-establish the connection.
 
 ## API Aplication Programming Interface
 
-> An API is the way to let software components to talk to each other. Give us access to additional functuinality. 
+> An API is the way to let software components to talk to each other. Give us access to additional functionality. 
 
 <img src="./assets/api.png" width="500">
 
