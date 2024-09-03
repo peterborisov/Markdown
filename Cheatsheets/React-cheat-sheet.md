@@ -11,16 +11,16 @@ Open-source, component-based, front-end library responsible only for the applica
 - **Dedicated tools for easy debugging**
 
 ### React concept
+- JSX
+- Components
+- One way data flow
 - virtual DOM instead of the real DOM.
 - It uses server-side rendering.
-- One way data flow
-- JSX
 - Embedding expressions in JSX
 - Declarative vs Imperative
 
-
 ### Building blocks of React
-- **Components**: Reusable blocks of code that return HTML.
+- **Components**: Reusable blocks of code that return HTML. Piece of UI.
 - **JSX**: It stands for JavaScript and XML and allows you to write HTML in React. By using JSX, we can write HTML structures in the same file that contains JavaScript code.
 - **Props and State**: props are like function parameters and State is similar to variables.
 - **Context**: This allows data to be passed through components as props in a hierarchy.

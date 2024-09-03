@@ -3,11 +3,17 @@
 ### Q&A
 
 **1. React vs. Angular**
+||Angular|React|
+|:---|:---|:---|
+||Framework| Library|
+|Author|Google| Facebook|
+|Architecture|Complete MVC(MVVM)|View layer of MVC|
+|DOM|Real DOM|Virtual DOM|
+|Data-Binding|Bi-directional|One way|
+|Rendering|Client-Side|Server-Side|
+|Performance|Slow|Faster due to Virtual DOM|
 
-- React is library. Angular is framework.
-- React is view from MVC. Angular is MVVM.
-- React is one way data binding(user click, handle event, update state). Child components are not able to update the data that is coming from the parent component. Angular is two ways(watcher update state and view at the same time).
-- React VDOM. Angular DOM.
+- One way data binding(user click, handle event, update state). Child components are not able to update parent data. Angular is two ways(watcher update state and view at the same time).
 
 **2. Lifecycle methods of component**
 - Initialization: the component is constructed with the given Props and default state.

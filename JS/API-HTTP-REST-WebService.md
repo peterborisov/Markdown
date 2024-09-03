@@ -109,7 +109,7 @@ Uses s WSDL(web services description language)<br/>
 
 ## Web Worker
 
-- Web workers provide a mechanism to spawn a separate script in the background
+- Web Workers are a mechanism that allows JavaScript code to run in background threads, separate from the main execution thread of the browser.
 - Basic communication happens between UI and web worker using following API
   - postmessage() - to send message
   - onmessage() - to receive message
