@@ -1,0 +1,24 @@
+- **REST** - Representational State Transfer - is an architectural style to be used for creating web services. Support JSON and XML formats.
+  - Separation of Client and Server - if code change, doesn't affect other side.
+  - Statelessness - the server does not need to know anything about what state of the client
+  - Communication between Client and Server
+- **API** (Application Programming Interface) - way of communication between programs.
+- **HTTP request** -
+  - Verb − Indicate HTTP methods such as GET, POST, DELETE, PUT etc.
+  - URI − Uniform Resource Identifier (URI) to identify the resource on server.
+  - HTTP Version − Indicate HTTP version, for example HTTP v1.1 .
+  - Request Header − Contains metadata for the HTTP Request message as key-value pairs.
+  - Request Body − Message content or Resource representation.
+- **SOA** - Service Oriented Architecture - uses services to create applications
+- **Cashed response** - storing server response in client, so no need to make server request for same resource again.
+- **Web service** - set of protocols and standards
+  - SOAP Web Services: Runs on SOAP protocol and uses XML technology for sending data.
+  - Restful Web Services: It’s an architectural style and runs on HTTP/HTTPS protocol over the web.
+    - Interoperability: Web services are accessible over network
+    - Reusability: One web service can be used by many client applications at the same time.
+    - Loose Coupling: Web services client code is totally independent with server code, so we have achieved loose coupling in our application.
+    - Easy to deploy and integrate, just like web applications.
+    - Multiple service versions can be running at same time.
+- **SOAP** - Simple Object Access Protocol - messaging protocol specification to crate API design. Highly structured, uses XML data format.
+- **WebSocket** Communications protocol, providing a simultaneous two-way communication.
+- **UDDI** - Universal Description, Discovery, and Integration. Standard for describing, publishing, and finding web services.

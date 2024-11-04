@@ -1,5 +1,10 @@
 ## Design patterns
 
+- Creational Patterns
+- Behavioral Patterns
+- Functional Patterns
+
+https://www.patterns.dev/vanilla/observer-pattern/
 https://javascriptpatterns.vercel.app/patterns/design-patterns/prototype-pattern
 
 > Design patterns are concepts to performantly solve commonly recurring problems in software architecture.
