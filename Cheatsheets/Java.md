@@ -51,10 +51,17 @@ static void myMethod(String fname) {
 ```
 public class Main {
 
-  // Class attribute
-  int x = 5;
+  // Attribute
+  int x;
 
-  // Class method - static or public
+  // Constructor
+  public Main() {
+    x = 5;  // Set the initial value for the class attribute x
+  }
+
+  // Method -
+    static - can be accessed without creating an object of the class
+    public - only be accessed by objects
   static void myMethod() {
     System.out.println("Hello World!");
   }
@@ -74,17 +81,6 @@ public class Main {
 }
 ```
 
-### Encapsulation - "sensitive" data is hidden from users
-
-### Inheritance
-
-- subclass (child) - the class that inherits from another class
-- superclass (parent) - the class being inherited from
-
-### Polymorphism - single action in different ways
-
-### Abstraction - showing only essential information to the user
-
 ### Access Modifiers
 
 - Private: only within the class. It cannot be accessed from outside the class.
@@ -92,15 +88,59 @@ public class Main {
 - Protected: within the package and outside the package through child class.
 - Public: everywhere.
 
+### Encapsulation - "sensitive" data is hidden from users
+
+- declare class variables/attributes as private
+- provide public get and set methods to access and update the value
+
+### Inheritance - class Car extends Vehicle
+
+- subclass (child) - the class that inherits from another class
+- superclass (parent) - the class being inherited from
+
+### Polymorphism - single action in different ways
+
+- Same method name different results in child classes.
+
+### Abstraction - showing only essential information to the user
+
+- Abstract class - cannot create objects, must be inherited
+- Abstract method - used in an abstract class with no body.
+
+### Interfaces - group related methods with empty bodies
+
+```
+// interface
+interface Animal {
+  public void animalSound(); // interface method (does not have a body)
+  public void run(); // interface method (does not have a body)
+}
+```
+
+### Enums - group of constants
+
+### Packages - group related classes
+
+- Built-in Packages - https://docs.oracle.com/javase/8/docs/api/
+- User-defined Packages -
+
+### Iterator
+
+- loop through collections, like ArrayList and HashSet.
+
+### Lambda Expressions
+
+- numbers.forEach( (n) -> { System.out.println(n); } );
+
 ### Data Structures
 
 - Arrays
-- ArrayList
-- LinkedList
+- ArrayList - resizable array
+- LinkedList - use to manipulate data
 - Stack
 - Queue
-- HashMap
-- HashSet
+- HashMap - store items in "key/value" pairs, for-each loop.
+- HashSet - collection, every item is unique, for-each loop
 - TreeSet
 - TreeMap
 - Graph
